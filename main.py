@@ -3,7 +3,7 @@ from langchain_core.prompts import ChatPromptTemplate
 from vector import retriever  # Assuming retriever is properly defined
 
 # Initialize the LLM model
-model = OllamaLLM(model="llama3.2")
+model = OllamaLLM(model="llama3.2:1b")
 
 # Define a new template for educational content
 template = """

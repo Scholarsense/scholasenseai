@@ -62,6 +62,13 @@ app.add_middleware(
 class Question(BaseModel):
     que: str
 
+
+# POST endpoint
+@app.get("/home")
+async def home():
+    
+        return {"answer": "result"}
+
 # POST endpoint
 @app.post("/")
 async def get_answer_from_pdf(question: Question):
